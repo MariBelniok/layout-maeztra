@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px) {
+
+
+
+
+    /* MAIN BANNER */
+    #banner-container div h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #banner-container div p{
+        font-size: 14px;
+        margin: 25px 0 16px;
+        max-width: 200px;
+    }
+    #banner-container button{
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px
+    }
+}

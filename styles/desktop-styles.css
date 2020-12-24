@@ -14,8 +14,14 @@
 html, body {
     min-height: 100vh;
     font-family: 'Titillium Web', sans-serif;
+    color: var(--grey-color); 
+}
+a{
     color: var(--grey-color);
-
+}
+a:hover{
+    color: #000000;
+    transition: 400ms;
 }
 .btn{
     background-color: var(--yellow-color);
@@ -96,7 +102,6 @@ header nav ul li.cart{
     border-radius: 10px;
 }
 header nav ul li a{
-    color: var(--grey-color);
     margin-left: 8px;
     position: relative;
 }
@@ -132,74 +137,8 @@ header nav ul li a:hover{
     color: var(--yellow-color);
     font-weight: bold;
 }
-#secondary-menu nav ul li a:hover.news{
-    color: var(--grey-color);
-    transition: 400ms;
-}
 
-/*BANNER CONTAINER*/
-#banner-container {
-    position: relative;
-    color: #FFFFFF;
-}
-#banner-container img{
-    max-width: 100%;
-    object-fit: contain;
-}
-#banner-container div:nth-child(2){
-    position: absolute;
-    top: 22%;
-    left: 15%;
-}
-#banner-container div h1{
-    font-size: 40px;
-    font-weight: bold;
-}
-#banner-container div p{
-    font-size: 20px;
-    margin: 40px 0 30px;
-    max-width: 350px;
-}
-#banner-container button{
-    font-weight: bold;
-}
-#banner-container #carousel{
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    left: 10%;
-}
-#banner-container #carousel a{
-    color: var(--grey-color);
-}
 
-/* CAROUSEL BUTTONS */
-.next, 
-.previous{
-    position: absolute;
-    top: 45%;
-    transform: translate3d(0, -50%, 0);
-
-    color: var(--grey-color);
-}
-.previous{
-    right: 50px;
-}
-.next{
-    left: 50px;
-}
-.bullets{
-    position: absolute;
-    bottom: 5%;
-    right: 45%;
-}
-.bullets a{
-    padding: 5px;
-}
-.bullets a img{
-    width: 16px;
-    height: 16px;
-}
 
 /* ADS SECTION */
 .ads{
@@ -212,7 +151,7 @@ header nav ul li a:hover{
 .cards{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 15px;
+    grid-gap: 10px;
 
     margin: auto 20px;
 }
@@ -226,6 +165,10 @@ header nav ul li a:hover{
     background-color: #EFEFEF;
     border-radius: 4px;
 }
+.card img{
+    margin: auto 15px;
+}
+
 .card h2{
     font-size: 14px;
 }
@@ -259,7 +202,7 @@ header nav ul li a:hover{
     height: 550px;
 }
 #products-cards img{
-    max-width: 100%;
+    width: 100%;
 }
 #products-cards .card h3{
     font-size: 16px;
@@ -286,6 +229,7 @@ header nav ul li a:hover{
 .product-info p {
     align-self: start;
 }
+
 /* RECTANGLES */
 .rectangles{
     display: flex;
