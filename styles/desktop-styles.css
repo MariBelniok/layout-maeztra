@@ -42,104 +42,6 @@ a:hover{
     background-color: #EFEFEF;
     border-radius: 8px;
 }
-
-/* HEADER SECTION */
-header{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
-}
-header .page-header{
-    background-color: var(--grey-color);
-
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    line-height: 18px;
-
-    padding: 4px;
-}
-
-header .menu-header{
-    margin: 35px 0;
-}
-
-header .img{
-    text-align: center;
-}
-header .img img{
-    margin-top: 5px;
-    height: 18px;
-}
-
-header .menu-header{
-    display: grid;
-    grid-template-columns: 250px 1fr 1fr;
-    align-items: center;
-    grid-gap: 24px;
-}
-
-header .menu-search{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-}
-
-header nav ul{
-    display: flex;
-    justify-content: space-between;
-
-    font-size: 14px;
-    line-height: 21px;
-
-    margin: auto 50px;
-}
-header nav ul li{
-    display: flex;
-    align-items: center;
-}
-header nav ul li.cart{
-    border: 1px solid var(--yellow-color);
-    padding: 12px;
-    border-radius: 10px;
-}
-header nav ul li a{
-    margin-left: 8px;
-    position: relative;
-}
-header nav ul li a:hover{
-    color: #000000;
-    transition: 400ms;
-}
-
-/*SECONDARY MENU*/
-#secondary-menu nav ul{
-    display: flex;
-    justify-content: space-between;
-
-    margin: auto 15%;
-}
-#secondary-menu nav ul li{
-    display: flex;
-    align-items: center;
-}
-#secondary-menu nav ul li img{
-    margin-right: 8px;
-}
-#secondary-menu nav ul li a{
-    color: var(--grey-color);
-    padding: 16px 0;
-}
-#secondary-menu nav ul li a:hover{
-    color: var(--yellow-color);
-    transition: 400ms;
-
-}
-#secondary-menu nav ul li a.news{
-    color: var(--yellow-color);
-    font-weight: bold;
-}
-
-
-
 /* ADS SECTION */
 .ads{
     font-size: 16px;
@@ -153,7 +55,7 @@ header nav ul li a:hover{
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
 
-    margin: auto 20px;
+    margin: auto 6rem;
 }
 .card{
     display: grid;
@@ -165,7 +67,7 @@ header nav ul li a:hover{
     background-color: #EFEFEF;
     border-radius: 4px;
 }
-.card img{
+#ads-cards .card img{
     margin: auto 15px;
 }
 
@@ -280,12 +182,17 @@ header nav ul li a:hover{
 
 /* COLLECTION INFORMATION */
 #colection-information{
-    margin: 80px 20px;
+    margin: 80px 6rem;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
     align-items: center;
+}
+#colection-information img.banner{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
 }
 #colection-information .information{
     color: #000;
@@ -345,14 +252,15 @@ footer{
     width: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
 .social-medias,
 .cred-cards,
 .footer-ads{
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
+    margin: auto 6rem;
 }
 .cred-cards{
     text-align: center

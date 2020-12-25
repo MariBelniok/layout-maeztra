@@ -1,0 +1,74 @@
+#banner-container {
+    position: relative;
+    color: #FFFFFF;
+}
+#banner-container img{
+    max-width: 100%;
+    object-fit: contain;
+}
+#banner-container .carousel-content{
+    position: absolute;
+    z-index: 100;
+    bottom: 25%;
+    left: 15%;
+}
+#banner-container .carousel-content h1{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+#banner-container .carousel-content p{
+    font-size: 1.2em;
+    margin: 2rem 0 1.5em;
+    max-width: 350px;
+}
+#banner-container .carousel-content button{
+    font-weight: bold;
+}
+
+/* BUTTONS */
+#banner-container .next img, 
+#banner-container .previous img{
+    color: var(--grey-color);
+    width: 20px;
+    height: 32px;
+}
+.glide__bullet{
+    margin: 0 16px 32px 0;
+}
+
+@media screen and (max-width: 480px) {
+    #banner-container img{
+        height: 320px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 30% bottom;
+    }
+    #banner-container .carousel-content{
+        width: 180px;
+        bottom: 30%;
+        left: 20%;
+    }
+    #banner-container .carousel-content h1{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    #banner-container .carousel-content p{
+        font-size: 16px;
+        line-height: 17px;
+        margin: 24px 0 16px;
+    }
+    #banner-container .carousel-content button{
+        padding: 5px 8px;
+    }
+    /* BUTTONS */
+    .next{
+        right: 2em;
+    }
+    .previous{
+        left: 2em;
+    }
+    .glide__bullet{
+        width: 8px;
+        height: 8px;
+    }
+}

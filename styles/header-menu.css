@@ -1,0 +1,137 @@
+/* HEADER SECTION */
+header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+header .page-header{
+    background-color: var(--grey-color);
+
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+
+    padding: 4px;
+}
+header .menu-header{
+    padding: 24px;
+    position: relative;
+}
+header .img{
+    text-align: center;
+}
+header .img img{
+    margin-top: 5px;
+    height: 18px;
+}
+header .menu-header{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    align-items: center;
+    grid-gap: 24px;
+}
+header .menu-search{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+    line-height: 21px;
+
+    margin: auto 50px;
+}
+header nav ul li{
+    display: flex;
+    align-items: center;
+}
+header nav ul li.cart{
+    border: 1px solid var(--yellow-color);
+    padding: 12px;
+    border-radius: 10px;
+}
+header nav ul li a{
+    margin-left: 8px;
+    position: relative;
+}
+header nav ul li a:hover{
+    color: #000000;
+    transition: 400ms;
+}
+
+/*SECONDARY MENU*/
+#secondary-menu nav ul{
+    display: flex;
+    justify-content: space-between;
+
+    margin: auto 15%;
+}
+#secondary-menu nav ul li{
+    display: flex;
+    align-items: center;
+}
+#secondary-menu nav ul li img{
+    margin-right: 8px;
+}
+#secondary-menu nav ul li a{
+    color: var(--grey-color);
+    padding: 16px 0;
+}
+#secondary-menu nav ul li a:hover{
+    color: var(--yellow-color);
+    transition: 400ms;
+}
+#secondary-menu nav ul li a.news{
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+#secondary-menu nav ul li a:hover.news{
+    color: var(--grey-color);
+    font-weight: bold;
+}
+
+@media screen and (max-width:480px){
+    header .page-header{
+        font-size: 10px;
+    }
+    header .menu-header{
+        grid-template-columns: 0.65fr 0.1fr 0.1fr;
+        left: 50px;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    header .img{
+        text-align: left;
+    }
+    header .img img{
+        width: 110px;
+    }
+    header .menu-search,
+    header nav ul,
+    #secondary-menu nav ul{
+        width: 25px;
+        height: 30px;
+    }
+    header .menu-search{
+        background: url("../images/mobile-menu/search.svg") no-repeat;
+    }
+    header nav ul{
+        background: url("../images/mobile-menu/card.svg") no-repeat;
+    }
+    header .menu-search input,
+    header .menu-search button,
+    header nav ul li,
+    #secondary-menu nav ul li{
+        display: none;
+    }
+    #secondary-menu nav ul{
+        background: url("../images/mobile-menu/icon-menu.svg") no-repeat;
+        position: absolute;
+        margin: -52.5px 25px;
+    }
+}
