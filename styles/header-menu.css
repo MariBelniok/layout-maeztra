@@ -109,7 +109,7 @@ header nav ul li a:hover{
         text-align: left;
     }
     header .img img{
-        width: 110px;
+        width: 100px;
     }
     header .menu-search,
     header nav ul,
@@ -118,10 +118,10 @@ header nav ul li a:hover{
         height: 30px;
     }
     header .menu-search{
-        background: url("../images/mobile-menu/search.svg") no-repeat;
+        background: url("../images/mobile-icons/search.svg") no-repeat;
     }
     header nav ul{
-        background: url("../images/mobile-menu/card.svg") no-repeat;
+        background: url("../images/mobile-icons/card.svg") no-repeat;
     }
     header .menu-search input,
     header .menu-search button,
@@ -130,7 +130,7 @@ header nav ul li a:hover{
         display: none;
     }
     #secondary-menu nav ul{
-        background: url("../images/mobile-menu/icon-menu.svg") no-repeat;
+        background: url("../images/mobile-icons/icon-menu.svg") no-repeat;
         position: absolute;
         margin: -52.5px 25px;
     }

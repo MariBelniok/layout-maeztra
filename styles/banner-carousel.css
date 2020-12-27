@@ -7,6 +7,7 @@
     object-fit: contain;
 }
 #banner-container .carousel-content{
+    font-family: "Montserrat";
     position: absolute;
     z-index: 100;
     bottom: 25%;
@@ -38,14 +39,11 @@
 
 @media screen and (max-width: 480px) {
     #banner-container img{
-        height: 320px;
-        width: 100%;
-        object-fit: cover;
-        object-position: 30% bottom;
+        width: 100vw;
     }
     #banner-container .carousel-content{
-        width: 180px;
-        bottom: 30%;
+        width: 220px;
+        bottom: 26%;
         left: 20%;
     }
     #banner-container .carousel-content h1{
@@ -53,22 +51,22 @@
         line-height: 37px;
     }
     #banner-container .carousel-content p{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 17px;
         margin: 24px 0 16px;
     }
-    #banner-container .carousel-content button{
-        padding: 5px 8px;
-    }
     /* BUTTONS */
     .next{
-        right: 2em;
+        right: 1.5em;
+        top: 46%;
     }
     .previous{
-        left: 2em;
+        left: 1.5em;
+        top: 46%;
     }
     .glide__bullet{
         width: 8px;
         height: 8px;
+        margin: 0 16px 16px 0;
     }
 }

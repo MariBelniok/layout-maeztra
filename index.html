@@ -6,11 +6,15 @@
     <title>Maeztra Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" rel="stylesheet">
-    <link href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" rel="stylesheet">
-    <link href="styles/header-menu.css" rel="stylesheet" >
-    <link href="styles/banner-carousel.css" rel="stylesheet" >
-    <link href="styles/desktop-styles.css" rel="stylesheet" >
+    <link href="styles/glide.core.min.css" rel="stylesheet">
+    <link href="styles/glide.theme.min.css" rel="stylesheet">
+    <link href="styles/collection-info.css" rel="stylesheet">
+    <link href="styles/footer-styles.css" rel="stylesheet">
+    <link href="styles/modal.css" rel="stylesheet">
+    <link href="styles/header-menu.css" rel="stylesheet">
+    <link href="styles/banner-carousel.css" rel="stylesheet">
+    <link href="styles/cards-carousel.css" rel="stylesheet">
+    <link href="styles/initial-styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -81,43 +85,62 @@
             <p>Confira os melhores looks para combinar com você nesse Outono</p>
             <button class="btn"type="submit">Conferir</button>
         </div>
-        <div class="carousel">
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide">
+        <div class="banner-carousel glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/mobile-banner.png">
                             <img class="banner" src="images/banner.svg" alt="Banner com modelo">
-                        </li>
-                        <li class="glide__slide">
+                        </picture>
+                    </li>
+                    <li class="glide__slide">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/mobile-banner.png">
                             <img class="banner" src="images/banner.svg" alt="Banner com modelo">
-                        </li>
-                        <li class="glide__slide">
+                        </picture>
+                    </li>
+                    <li class="glide__slide">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/mobile-banner.png">
                             <img class="banner" src="images/banner.svg" alt="Banner com modelo">
-                        </li>
-                        <li class="glide__slide">
+                        </picture>
+                    </li>
+                    <li class="glide__slide">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/mobile-banner.png">
                             <img class="banner" src="images/banner.svg" alt="Banner com modelo">
-                        </li>
-                        <li class="glide__slide">
+                        </picture>
+                    </li>
+                    <li class="glide__slide">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/mobile-banner.png">
                             <img class="banner" src="images/banner.svg" alt="Banner com modelo">
-                        </li>
-                    </ul>
-                </div>
-                <div class="glide__track" data-glide-el="track">...</div>
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left previous" data-glide-dir="<">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__track" data-glide-el="track">...</div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left previous" data-glide-dir="<">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/mobile-icons/arrow-left-mob.svg">
                             <img src="images/arrow-left.svg" alt="">
-                        </button>
-                        <button class="glide__arrow glide__arrow--right next" data-glide-dir=">">
+                        </picture>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right next" data-glide-dir=">">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/mobile-icons/arrow-right-mob.svg">
                             <img src="images/arrow-right.svg" alt="">
-                        </button>5
-                    </div>
-                    <div class="glide__bullets" data-glide-el="controls[nav]">
-                        <button class="glide__bullet" data-glide-dir="=0"></button>
-                        <button class="glide__bullet" data-glide-dir="=1"></button>
-                        <button class="glide__bullet" data-glide-dir="=2"></button>
-                        <button class="glide__bullet" data-glide-dir="=3"></button>
-                        <button class="glide__bullet" data-glide-dir="=4"></button>
-                    </div>
+                        </picture>
+                    </button>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
                 </div>
             </div>
         </div>
@@ -126,152 +149,179 @@
     </section>
     <section id="ads-cards">
         <p class="ads">Por que comprar na Maeztra?</p>
-        <div class="cards">
-            <div class="card">
-                <img src="images/tipbar-icones/1.svg">
-                <div>
-                    <h2>Produtos importados</h2>
-                    <p>Produto de Alta Qualidade</p>
-                </div>
-                
-            </div>
-            <div class="card">
-                <img src="images/tipbar-icones/2.svg">
-                <div>
-                    <h2>Estoque no Brazil</h2>
-                    <p>Produtos mais perto de você!</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/tipbar-icones/3.svg">
-                <div>
-                    <h2>Trocas Garantidas</h2>
-                    <p>Trocas em até 48 horas, vejas as regras</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/tipbar-icones/4.svg">
-                <div>
-                    <h2>Ganhe 5% off</h2>
-                    <p>Pagando à vista no Cartão</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/tipbar-icones/5.svg">
-                <div>
-                    <h2>Frete Grátis</h2>
-                    <p>Em compras acima de R$ 499,00</p>
-                </div>
+        <div class="ads-cards-carousel glide">
+            <div class="cards glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide card">
+                        <img src="images/tipbar-icones/1.svg">
+                        <div>
+                            <h2>Produtos importados</h2>
+                            <p>Produto de Alta Qualidade</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide card">
+                        <img src="images/tipbar-icones/2.svg">
+                        <div>
+                            <h2>Estoque no Brazil</h2>
+                            <p>Produtos mais perto de você!</p>
+                        </div>    
+                    </li>
+                    <li class="glide__slide card">
+                        <img src="images/tipbar-icones/3.svg">
+                        <div>
+                            <h2>Trocas Garantidas</h2>
+                            <p>Trocas em até 48 horas, vejas as regras</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide card">
+                        <img src="images/tipbar-icones/4.svg">
+                            <div>
+                                <h2>Ganhe 5% off</h2>
+                                <p>Pagando à vista no Cartão</p>
+                            </div> 
+                    </li>
+                    <li class="glide__slide card">
+                        <img src="images/tipbar-icones/5.svg">
+                        <div>
+                            <h2>Frete Grátis</h2>
+                            <p>Em compras acima de R$ 499,00</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        
     </section>
     <section id="brends-cards">
         <h2>Marcas Parceiras</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="images/tipbar-logos/logo1.png">
-            </div>
-            <div class="card">
-                <img src="images/tipbar-logos/logo2.png">
-            </div>
-            <div class="card">
-                <img src="images/tipbar-logos/logo3.png">
-            </div>
-            <div class="card">
-                <img src="images/tipbar-logos/logo4.png">
-            </div>
-            <div class="card">
-                <img src="images/tipbar-logos/logo5.png">
+        <div class="brends-cards-carousel glide">
+            <div class="cards glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/tipbar-logos/logo3.png">
+                            <img src="images/tipbar-logos/logo1.png">
+                        </picture>
+                    </li>
+                    <li class="glide__slide card"><img src="images/tipbar-logos/logo2.png"></li>
+                    <li class="glide__slide card">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/tipbar-logos/logo1.png">
+                            <img src="images/tipbar-logos/logo3.png">
+                        </picture>
+                    <li class="glide__slide card"><img src="images/tipbar-logos/logo4.png"></li>
+                    <li class="glide__slide card"><img src="images/tipbar-logos/logo5.png"></li>
+                </ul>
             </div>
         </div>
     </section>
     <section id="products-cards">
         <h2>As mais pedidas</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="images/produto1.png">
-                <div class="rectangles">
-                    <div class="rectangle-yellow"></div>
-                    <div class="rectangle-orange"></div>
-                    <div class="rectangle-softblue"></div>
-                    <div class="rectangle-blue"></div>
-                </div>
-                <div class="product-info">
-                    <p class="price">R$500,00</p>
-                    <h3>Faux Suede Mini Skirt</h3>
-                    <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
-                </div>
-                
-                <button type="submit" class="btn">Adicionar</button>
+        <div class="prod-cards-carousel glide">
+            <div class="cards glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide card">
+                        <img src="images/produto1.png">
+                        <div class="prod-content">
+                            <div class="rectangles">
+                                <div class="rectangle-yellow"></div>
+                                <div class="rectangle-orange"></div>
+                                <div class="rectangle-softblue"></div>
+                                <div class="rectangle-blue"></div>
+                            </div>
+                            <div class="product-info">
+                                <p class="price">R$500,00</p>
+                                <h3>Faux Suede Mini Skirt</h3>
+                                <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                            </div>
+                        <button type="submit" class="btn">Adicionar</button>
+                        </div>
+                    </li>
+                    <li class="glide__slide card">
+                        <img src="images/produto2.png">
+                        <div class="prod-content">
+                            <div class="rectangles">
+                                <div class="rectangle-black"></div>
+                                <div class="rectangle-red"></div>
+                                <div class="rectangle-cream"></div>
+                                <div class="rectangle-ice"></div>
+                            </div>
+                            <div class="product-info">
+                                <p class="price">R$320,00</p>
+                                <h3>Ruched Rose Print Mini Skirt</h3>
+                                <p>A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
+                            </div>
+                        <button type="submit" class="btn">Adicionar</button>
+                        </div>
+                    </li>
+                    <li class="glide__slide card">
+                        <img src="images/produto1.png">
+                        <div class="prod-content">
+                            <div class="rectangles">
+                                <div class="rectangle-yellow"></div>
+                                <div class="rectangle-orange"></div>
+                                <div class="rectangle-softblue"></div>
+                                <div class="rectangle-blue"></div>
+                            </div>
+                            <div class="product-info">
+                                <p class="price">R$500,00</p>
+                                <h3>Faux Suede Mini Skirt</h3>
+                                <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                            </div>
+                        <button type="submit" class="btn">Adicionar</button>
+                        </div>
+                    </li>
+                    <li class="glide__slide card">
+                        <img src="images/produto2.png">
+                        <div class="prod-content">
+                            <div class="rectangles">
+                                <div class="rectangle-black"></div>
+                                <div class="rectangle-red"></div>
+                                <div class="rectangle-cream"></div>
+                                <div class="rectangle-ice"></div>
+                            </div>
+                            <div class="product-info">
+                                <p class="price">R$320,00</p>
+                                <h3>Ruched Rose Print Mini Skirt</h3>
+                                <p>A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
+                            </div>
+                        <button type="submit" class="btn">Adicionar</button>
+                        </div>
+                    </li>
+                    <li class="glide__slide card">
+                        <img src="images/produto1.png">
+                        <div class="prod-content">
+                            <div class="rectangles">
+                                <div class="rectangle-yellow"></div>
+                                <div class="rectangle-orange"></div>
+                                <div class="rectangle-softblue"></div>
+                                <div class="rectangle-blue"></div>
+                            </div>
+                            <div class="product-info">
+                                <p class="price">R$500,00</p>
+                                <h3>Faux Suede Mini Skirt</h3>
+                                <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+                            </div>
+                        <button type="submit" class="btn">Adicionar</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="card">
-                <img src="images/produto2.png">
-                <div class="rectangles">
-                    <div class="rectangle-black"></div>
-                    <div class="rectangle-red"></div>
-                    <div class="rectangle-cream"></div>
-                    <div class="rectangle-ice"></div>
+            <div class="glide__track" data-glide-el="track"></div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left previous" data-glide-dir="<">
+                        <img src="images/arrow-left.svg" alt="">
+                    </button>
+                    <button class="glide__arrow glide__arrow--right next" data-glide-dir=">">
+                        <img src="images/arrow-right.svg" alt="">
+                    </button>
                 </div>
-                <div class="product-info">
-                    <p class="price">R$320,00</p>
-                    <h3>Ruched Rose Print Mini Skirt</h3>
-                    <p>A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
-                </div>
-                
-                <button type="submit" class="btn">Adicionar</button>
-            </div>
-            <div class="card">
-                <img src="images/produto1.png">
-                <div class="rectangles">
-                    <div class="rectangle-yellow"></div>
-                    <div class="rectangle-orange"></div>
-                    <div class="rectangle-softblue"></div>
-                    <div class="rectangle-blue"></div>
-                </div>
-                <div class="product-info">
-                    <p class="price">R$500,00</p>
-                    <h3>Faux Suede Mini Skirt</h3>
-                    <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
-                </div>
-                <button type="submit" class="btn">Adicionar</button>
-            </div>
-            <div class="card">
-                <img src="images/produto2.png">
-                <div class="rectangles">
-                    <div class="rectangle-black"></div>
-                    <div class="rectangle-red"></div>
-                    <div class="rectangle-cream"></div>
-                    <div class="rectangle-ice"></div>               
-                </div>
-                <div class="product-info">
-                    <p class="price">R$320,00</p>
-                    <h3>Ruched Rose Print Mini Skirt</h3>
-                    <p>A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
-                </div>
-                <button type="submit" class="btn">Adicionar</button>
-            </div>
-            <div class="card">
-                <img src="images/produto1.png">
-                <div class="rectangles">
-                    <div class="rectangle-yellow"></div>
-                    <div class="rectangle-orange"></div>
-                    <div class="rectangle-softblue"></div>
-                    <div class="rectangle-blue"></div>
-                </div>
-                <div class="product-info">
-                    <p class="price">R$500,00</p>
-                    <h3>Faux Suede Mini Skirt</h3>
-                    <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
-                </div>
-                <button type="submit" class="btn">Adicionar</button>
             </div>
         </div>
     </section>
     <section id="colection-information">
         <div class="information">
             <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim dictum. Mattis proin ut quis donec sed eget nulla. Vel mi ut mauris integer. Nibh sagittis in lobortis sed cursus condimentum velit pharetra. Amet luctus ut vulputate scelerisque placerat consequat. Neque arcu mi iaculis id. Vel vitae, pharetra, a nec tristique. Feugiat id tortor eu mauris pulvinar velit massa. Ut ornare augue eget convallis volutpat aliquet. Sed sed pellentesque porttitor phasellus donec condimentum sit sapien.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim dictum. Mattis proin ut quis donec sed eget nulla. Vel mi ut mauris integer. Nibh sagittis in lobortis sed cursus condimentum velit pharetra. Amet luctus ut vulputate scelerisque.
             </p>
         </div>
         <div>
@@ -345,16 +395,16 @@
         </div>
     </footer>
 
-    <div id="modal" class="hide">
+    <div id="modal">
         <div class="modal-content">
             <span class="close">FECHAR</span>
             <div class="modal-banner">
-                <img src="images/modal-img.png" alt="">
+                <img class="mail-banner" src="images/modal-img.png" alt="">
             </div>
             <div class="modal-form">
                 <div>
-                    <i class="material-icons">mail_outline</i>
-                    <h2>BEM VINDO A MAEZTRA</h2>
+                    <img class="mail" src="images/mail.svg">
+                    <h2>Bem vindo à Maeztra</h2>
                     <p>Receba em Primeira mão <br><span>desconto e ofertas exclusivas</span> </p>
                 </div>
                 <div class="modal-input">
@@ -373,14 +423,7 @@
         </div>
 
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-        const config = {
-            type: 'carousel'
-        }
-       new Glide('.glide', config).mount()
-    </script>
     <script src="script.js"></script>
 </body>
 </html>

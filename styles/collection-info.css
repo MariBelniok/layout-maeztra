@@ -1,0 +1,47 @@
+/* COLLECTION INFORMATION */
+#colection-information{
+    margin: 80px 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+#colection-information img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+#colection-information .information{
+    color: #000;
+    max-width: 450px;
+}
+
+@media screen and (max-width: 480px) {
+    #colection-information{
+        margin: auto 2rem 40px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #FAFAFA;
+    }
+    #colection-information h2{
+        margin: 16px auto;
+        font-size: 24px;
+    }
+    #colection-information p{
+        width: 90%;
+        font-size: 14px;
+    }
+    #colection-information img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 8px;
+        margin: 10px auto;
+    }
+    #colection-information .information{
+        color: #000;
+    }
+}
