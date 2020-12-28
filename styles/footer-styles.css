@@ -25,6 +25,9 @@
     grid-template-columns: 4fr 1fr;
     margin-left: 20px;
 }
+#newsletter .input{
+    border: 1px solid var(--grey-color);
+}
 #newsletter .btn{
     width: 120px;
 }
