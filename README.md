@@ -12,8 +12,8 @@
 
 <p align="center">
   <a href="https://maribelniok.github.io/maeztrachallange/">Index</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Tecnologias usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#key-licença">Licença</a>
+  <a href="#Tecnologias">Tecnologias usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Licença">Licença</a>
 </p>
 
 
@@ -29,7 +29,7 @@
 
 Esse challange foi desenvolvido pela [Maeztra][maeztra] para testar o nível de conhecimento e perfeccionismo dos candidatos a vaga de desenvolvedor front-end.
 
-## 🚀  Tecnologias:
+## 🚀 Tecnologias:
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
