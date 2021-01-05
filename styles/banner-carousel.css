@@ -1,10 +1,11 @@
 #banner-container {
+    max-width: 100vw;
     position: relative;
     color: #FFFFFF;
 }
 #banner-container img{
-    max-width: 100%;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
 }
 #banner-container .carousel-content{
     font-family: "Montserrat";
@@ -36,7 +37,26 @@
 .glide__bullet{
     margin: 0 16px 32px 0;
 }
-
+@media screen and (min-width: 1920px) {
+    #banner-container .carousel-content h1{
+        font-size: 3.5em;
+    }
+    #banner-container .carousel-content p{
+        font-size: 1.8em;
+        margin: 3rem 0 2em;
+        max-width: 550px;
+    }
+    #banner-container .carousel-content button{
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .glide__arrow--left{
+        left: 12em
+    }
+    .glide__arrow--right{
+        right: 12em
+    }
+}
 @media screen and (max-width: 480px) {
     #banner-container img{
         width: 100vw;

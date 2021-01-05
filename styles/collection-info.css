@@ -1,6 +1,7 @@
 /* COLLECTION INFORMATION */
 #colection-information{
-    margin: 80px 4rem;
+    width: 90%;
+    margin: 80px auto;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -14,16 +15,29 @@
 }
 #colection-information .information{
     color: #000;
-    max-width: 450px;
+    max-width: 90%;
+}
+
+@media screen and (min-width: 1920px) {
+    #colection-information{
+        width: 75%;
+        margin: 80px auto;
+    }
+    #colection-information img{
+        height: 450px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
     #colection-information{
-        margin: auto 2rem 40px;
+        width: 90%;
+        margin: auto;
     
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: initial;
         background-color: #FAFAFA;
     }
     #colection-information h2{
@@ -31,12 +45,11 @@
         font-size: 24px;
     }
     #colection-information p{
-        width: 90%;
+        width: 95%;
         font-size: 14px;
     }
     #colection-information img{
         height: 100%;
-        width: 100%;
         object-fit: contain;
         border-radius: 8px;
         margin: 10px auto;

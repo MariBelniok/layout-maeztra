@@ -7,7 +7,7 @@
 }
 .newsletter,
 #footer-menu{
-    max-width: 900px;
+    max-width: 70%;
 
     margin: 50px auto;
 
@@ -23,7 +23,6 @@
 #newsletter .newsletter-input{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    margin-left: 20px;
 }
 #newsletter .input{
     border: 1px solid var(--grey-color);
@@ -52,6 +51,7 @@
 footer{
     background-color: var(--grey-color);
     width: 100%;
+    margin: auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -62,10 +62,7 @@ footer{
 .footer-ads{
     text-align: center;
     padding: 15px 0;
-    margin: auto 6rem;
-}
-.cred-cards{
-    text-align: center
+    margin: auto;
 }
 .social-medias a + a,
 .cred-cards a + a{
@@ -88,7 +85,18 @@ footer{
     font-size: 10px;
     margin-bottom: 5px;
 }
-
+@media screen and (min-width: 1920px){
+    .newsletter,
+    #footer-menu{
+        width: 50%;
+    }
+    #newsletter .newsletter-input{
+        grid-template-columns: 4.5fr 0.5fr;
+    }
+    footer{  
+        grid-template-columns: 1fr 0.9fr 1fr;
+    }
+}
 @media screen and (max-width: 480px) {
     /* NEWSLETTER */
     .newsletter{
@@ -97,7 +105,9 @@ footer{
         align-items: center;
         margin: 20px auto;
     }
-    #newsletter h2{
+    #newsletter .newsletter h2{
+        width: 100vw;
+        text-align: center;
         font-size: 24px;
         color: var(--grey-color);
     }
@@ -105,7 +115,7 @@ footer{
         height: 25px;
         width: 200px;
         border: 1px solid var(--grey-color);
-        margin-left: 1em;
+        margin-left: 1.8em;
         border-radius: 4px;
     }
     #newsletter button.btn{
@@ -117,12 +127,12 @@ footer{
     }
     /* FOOTER MENU */
     #footer-menu {
+        width: 100%;
         position: relative;
         margin: 40px 2em;
         display: block;
     }
     .footer-menu-content {
-        width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -135,7 +145,7 @@ footer{
         position: absolute;
         content: "+";
         font-weight: bolder;
-        right: 0;
+        right: -30px;
     }
     .footer-menu-content nav ul li{
         display: none;
