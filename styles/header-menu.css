@@ -102,10 +102,28 @@ header nav ul li a:hover{
     }
     header .menu-header{
         grid-template-columns: 250px 1.5fr 0.8fr;
-        grid-gap: 70px;
+        grid-gap: 100px;
     }
-    #secondary-menu nav ul{
-        width: 60%;
+}
+@media screen and (min-width: 3440px){
+    header{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px){
+    header{
+        width: 90%;
+        margin: auto;
+    }
+    header .menu-header{
+        grid-template-columns: 150px 1.5fr 0.8fr;
+        grid-gap: 10px;
+    }
+    header .img{
+        text-align: start;
+    }
+    header a {
+        display: none;
     }
 }
 @media screen and (max-width:480px){
@@ -113,13 +131,12 @@ header nav ul li a:hover{
         font-size: 10px;
     }
     header .menu-header{
-        grid-template-columns: 0.65fr 0.1fr 0.1fr;
+        grid-template-columns: 0.7fr 0.1fr 0.1fr;
         justify-content: end;
     }
-    header nav ul{
+    header nav > ul{
         display: flex;
-        justify-content: space-between;
-        margin: 0;
+        margin-right: -20px;
     }
     header .img{
         text-align: left;

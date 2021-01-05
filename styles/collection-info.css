@@ -24,9 +24,23 @@
         margin: 80px auto;
     }
     #colection-information img{
-        height: 450px;
+        height: 500px;
     }
+}
+@media screen and (min-width: 2560px) {
+    #colection-information img{
+        height: 650px;
+    }
+}
 
+@media screen and (min-width: 3440px){
+    #colection-information{
+        width: 65%;
+        margin: 80px auto;
+    }
+    #colection-information img{
+        height: 850px;
+    }
 }
 
 @media screen and (max-width: 480px) {

@@ -15,11 +15,11 @@
     left: 15%;
 }
 #banner-container .carousel-content h1{
-    font-size: 2.5em;
+    font-size: 40px;
     font-weight: bold;
 }
 #banner-container .carousel-content p{
-    font-size: 1.2em;
+    font-size: 20px;
     margin: 2rem 0 1.5em;
     max-width: 350px;
 }
@@ -55,6 +55,58 @@
     }
     .glide__arrow--right{
         right: 12em
+    }
+}
+@media screen and (min-width: 2560px) {
+    #banner-container .carousel-content h1{
+        font-size: 4.5em;
+    }
+    #banner-container .carousel-content p{
+        font-size: 2.2em;
+        margin: 4rem 0 2.5em;
+        max-width: 850px;
+    }
+}
+@media screen and (min-width: 3440px) {
+    #banner-container .carousel-content h1{
+        font-size: 6.5em;
+    }
+    #banner-container .carousel-content p{
+        font-size: 2.5em;
+        margin: 4.5rem 0 3.5em;
+        max-width: 850px;
+    }
+    #banner-container .carousel-content button{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 800px) {
+    #banner-container .carousel-content{
+        bottom: 20%;
+    }
+    #banner-container .carousel-content h1{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    #banner-container .carousel-content p{
+        font-size: 16px;
+        line-height: 24px;
+        margin: 20px 0 16px;
+    }
+    #banner-container .carousel-content button{
+        padding: 6px 12px;
+    }
+    /* BUTTONS */
+    .next{
+        right: 1em;
+    }
+    .previous{
+        left: 1em;
+    }
+    .glide__bullet{
+        width: 8px;
+        height: 8px;
+        margin: 0 16px 16px 0;
     }
 }
 @media screen and (max-width: 480px) {

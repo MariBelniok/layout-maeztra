@@ -14,13 +14,15 @@ const bannerConfig = {
 }
 const cardsConfig = {
     type: 'carousel',
+    peek: 0,
+    gap: 50,
+    perView: 5,
     breakpoints: {
-        1920: {
-            peek: 0,
-            gap: 15,
+        2560: {
             perView: 5,
+            gap: 15,
         },
-        800: {
+        780: {
             peek: 0,
             perView: 3,
         },
@@ -33,14 +35,16 @@ const cardsConfig = {
 }
 const brendsConfig = {
     type: 'carousel',
+    peek: 0,
+    perView: 5,
     breakpoints: {
-        1920: {
-            peek: 0,
+        2560: {
+            gap: 15,
             perView: 5,
         },
-        800: {
+        780: {
             peek: 20,
-            perView: 5,
+            perView: 3,
         },
         480: {
             gap: 15,
