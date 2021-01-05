@@ -15,18 +15,18 @@ const bannerConfig = {
 const cardsConfig = {
     type: 'carousel',
     breakpoints: {
-        3840: {
+        1920: {
             peek: 0,
             gap: 15,
             perView: 5,
         },
         800: {
-            peek: 30,
+            peek: 0,
             perView: 3,
         },
         480: {
-            gap: 15,
-            peek: 30,
+            gap: 15,    
+            peek: { before: 15, after: 30 },
             perView: 1,
         }
     }
@@ -34,39 +34,17 @@ const cardsConfig = {
 const brendsConfig = {
     type: 'carousel',
     breakpoints: {
-        3840: {
-            startAt:0,
+        1920: {
             peek: 0,
             perView: 5,
         },
         800: {
-            peek: 30,
+            peek: 20,
             perView: 5,
         },
         480: {
-            startAt: 2,
             gap: 15,
-            peek: 30,
-            perView: 1,
-        }
-    }
-}
-const prodConfig = {
-    type: 'carousel',
-    breakpoints: {
-        3840: {
-            startAt:0,
-            peek: 0,
-            perView: 5,
-        },
-        800: {
-            peek: 30,
-            perView: 5,
-        },
-        480: {
-            startAt: 2,
-            gap: 15,
-            peek: 30,
+            peek: 20,
             perView: 1,
         }
     }
