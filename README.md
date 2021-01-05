@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://maribelniok.github.io/maeztrachallange/">Index</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://maribelniok.github.io/layout-maeztra/">Index</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Tecnologias">Tecnologias usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Licença">Licença</a>
 </p>
